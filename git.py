@@ -78,3 +78,13 @@ example:
 git rm --cached -r . : خالي کردن کچ
 git add . : اضافه کردن دوباره فايل ها 
 commit -m "message"  : کاميت
+
+#remote - push - pull
+git remote add remotename url : ساخت ريموت
+git push -u remotename branchname : ارتباط ريموت با شاخه 
+git remote : مشاهده ريموت هاي ساخته شده
+git push : ارسال اطلاعات به گيت هاب
+قبل از پوش کردن بايستي کاميت هاي خود را ثبت کنيد
+git pull : دريافت اطلاعات از گيت هاب
+
+git clone url : دريافت  کل پروژه روي سيستم براي اولين بار از گيت
