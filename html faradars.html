@@ -1,0 +1,200 @@
+<html> tag asli</html>
+head , body : farzandan tag html 
+ - این زبان ارور ندارد پس باید کد با تو رفتگی و مرتب نوشته شود 
+ تا هنگام حل مشکلات کد گیج نشویم 
+متا تگ ها اطلاعاتی در مورد سایر تگ ها به مرور گر میدهند 
+
+سئو : مجموعه فعالیت هایی که باعث بالا رفتن رتبه سایت در موتور های جستجو می شود 
+
+تایتل(داخل تگ هد ) صفحه در سئو بسیار اهمیت دارد 
+هنگام بوکمارک کردن صفحه با عنوانی که در تایتل قرار دارد ذخیره میشود 
+
+تگ بادی : هر چیزی داخل تگ بادی باشد در صفحه صفید (اصلی ) نمایش داده میشود
+
+<p> برای ساخت پاراگراف </p>
+<br/> سر خط رفتن 
+
+
+<a href = "http://www.digikala.com" title  = "go to digikala market " target = "_blank">click here </a> لینک دهی سایت 
+title در اینجا یک  راهنما برای لینک نشان می دهند 
+تقریبا در تمام تگ ها تایتل وجود دارد `
+
+target = "_blank" باعث میشود لینک در تب جدید باز شود 
+
+<a href = "file.html">click here </a> لینک دهی لوکال ادرس فایل در دایرکتوری 
+ 
+"..\file.html" یک پوشه به عقب بر میگردد و فایل را اجرا می کند 
+
+<a name = "start">start of page </a> نشانه گذاری صفحه 
+<a href = "#start">go to Top</a> لینک دهی به قسمت نشان گذاری شده 
+
+<a href = "../file.html#start"></a> ادرس دهی قسمتی از صحفه از سند دیگر 
+
+عبارات # به معنای جستجو در صفحه موجود است 
+
+<img src = "file.jpeg" title ="beuty desert" alt = "desert" style = "width: 20px; height: 30px;
+ border-width:10px; border-color = red; border-style:solid ; float:left " >  
+گذاشتن عکس در صفحه 
+title : نمایش متن هنگام اسیستادن موس  روی عکس 
+alt : اگر به هر دلیلی عکس نمایش داده نده شد متن این تگ نمایش داده میشود 
+نرم افزار های اسکرین ریدر هم این تگ را می خانند 
+solid : در اینجا یعنی یک خط به هم پیوسته 
+border برای نمایش صحیح بردر باید این سه ویژگی بردر نوشته شود 
+float: left باعث میشود عکس در سمت چپ شناور شده و سمت دیگر را خالی بگذارد  
+
+
+<a href = "***" >
+    <img src = "**">
+</a>
+جهت لینک دادن به عکس تگ ایمج را داخل نگ آ می گذاریم
+ 
+image maping:
+<img src = "sun.jpg" title = "sun" alt = "sun image" style="float:left " usemap = "#picturemap" />
+        <map name = "picturemap" >
+            <area shape = "circle" coords = "25,10,14" href = "https://google.com"
+            <area shape = "rect" coords = "63,96,90,126" alt = "rect" href = "https://www.google.com/search?q=rect" >
+        </map>
+usemap  برای مشخص کردن نام مپ
+در دایره دو عدد اول متخصات مرکز دایره و عدد بعدی شعاع دایره می باشد 
+در مستطیل دو عدد اول مختصات گوشه بالا سمت چت 
+و دو عدد دوم متصخات گوشه پایین راست می باشد 
+
+مختصات ها را میتوان با نرم افزار پینت ویندوز پیدا کرد 
+
+style class :
+برای جلوگیری از تعریف استایل های مشابه برای هر پاراگراف یا سایر چیزها 
+داخل تگ هد یک تگ استایل اضافه و به صورت زیر کلاس استایل می سازیم 
+<head>
+    <style> 
+        p{
+            background-color: yellowgreen; color : brown
+        }
+
+        .p1{
+            bacground-color: yellow ; color : beige ; font-size :24pt !important
+        }
+
+        #p1 { 
+            color: red;
+        }
+    </style>
+</head>
+با گذاشتن نقطه  میتوان یک کلاس استایل با نام دلخواه تعریف و در 
+قسمت های مختلف از ان استفاده کرد 
+
+با گذاشتن علامت # می توان یک آی دی تعریف و از آن در قسمت های مختلف استفاده کرد 
+
+
+
+اگر نقطه نباشد باید دقیقا اسم تگی که میخواهیم در آن این استایل 
+در نظر گرفته شود می نویسیم 
+
+<p> salam </p>
+<p class = "p1"> salam </p>
+<p class = "p1" id = "p1">salam</p>
+
+ترتیب اولویت  
+نام تگ1 - کلاس2 - آی دی3 
+
+اگر میخواهیم ویژگی استایل توسط کلاس یا ای دی دیگر تغییر نکند 
+جلوی آن ویژکی !important 
+می گذاریم
+ 
+نحوه تعریف یک استایل در فایل جداگانه 
+کلاس ها و ایدی ها و غیره را در یک فایل جدا می سازیم سپس با پسوند css ذخیرمی کنیم 
+سپس به شکل زیر عمل می کنیم 
+
+<head>
+    <link type= "text/css" rel = "stylesheet" href = 'directory'/> 
+</head>
+
+ساخت لیست: ol , ul , dl 
+<ol type = "1" start = "10" >
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+</ol>
+ol : لیست مرتب 
+start : شروع از کدامین عدد 
+type :  عدد1 : نحوه شمارش   A a i or I 
+
+<ul type = "circle"  >
+    <li>html</li>
+    <li type ="disc" >css</li>
+    <li>javascript</li>
+</ul>
+type : disc , circle , square
+مربع ، دایره و دیسک تو پر 
+
+we can use type for <li> too 
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Hyper text markup language</dd>
+    <dt>CSS</dt>
+    <dd>cascading style sheet </dd>
+</dl>
+ در این حالت هر مورد همراه با توضیح آن نشان داده میشود 
+table :
+ مخصوص نشان دادن اطلاعات متنی مختصر یا آیکون های کوچک  
+استفاده از تیبل برای طراحی قالب کلی کار درستی نیست 
+
+<table border="1" width="300" height="300" align="center" cellpadding="20" cellspacing="30">
+border : اندازه خط بیرونی جدول را مشخص میکند
+width : اندازه عرض  هر سلول 
+height : اندازه ارتفاع هر سلول 
+align : center , left , right چینش خود جدول در صفحه 
+cellpadding : فاصله متن هر سلول از هر چهار طرف را مشخص میکند 
+cellspacign : فاصله بین سلول های جدول را مشخص میکند 
+    <caption>Class Table</caption>
+caption : عنوان هر جدول 
+    <colgroup>
+colgroup : گروه بندی ستون ها برای اعمال استایل 
+        <col span="2" style="background-color:red" />
+span : مشخص میکند چند ستون داخل گروه بندی هستند 
+        <col style="background-color : yellow" />
+    </colgroup>
+    <thead>
+thead : سرستون هر جدول را می سازد 
+        <tr>
+            <th>Class Name</th>
+            <th>Partcipants</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tfoot>
+قسمت انتهای جدول را می سازد 
+        <tr>
+            <td >Total</td>
+            <td >35</td>
+        </tr>
+    </tfoot>
+    <tbody>
+بدنه جدول 
+    <tr>
+        <td>HTML Class</td>
+        <td>20</td>
+        <td>1st Floor</td>
+    </tr>
+    <tr>
+        <td>CSS Class</td>
+        <td>15</td>
+        <td>2nd Floor</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
